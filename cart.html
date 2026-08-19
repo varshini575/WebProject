@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navbar code -->
+    <nav class="navbarContrainer">
+        <div class="logo">Electronics</div>
+        <div class="menu-items">
+            <a href="./HomePage.html">Home</a>
+            <div class="dropdown">
+                <span>Categories</span>
+                <div class="dropdown-content">
+                    <a onclick="searchCategory('mobile')">Mobile</a>
+                    <a onclick="searchCategory('laptop')">Laptop</a>
+                    <a onclick="searchCategory('watch')">Watches</a>
+                </div>
+            </div>
+            <a href="">About</a>
+
+
+              
+        </div>
+
+
+        <div class="searchBox">
+            <input type="search" id="search" placeholder="search a product ......" onkeyup="searchFilter()">
+        </div>
+
+        <div class="nav-right">
+            <img src="" alt="Profile" id="ProfileImage">
+            <a href="">Wishlist❤️</a>
+            <a href="./cart.html">Cart🛒</a>
+        </div>
+    </nav>
+
+    <!--product container-->
+    <section id="product-container">
+
+    </section>
+
+
+    <!--cart Summary-->
+    <section class="cartSummary">
+        <h2 id="total"></h2>
+        <button>Clear Cart</button>
+        <button>Checkout</button>
+    </section>
+</body>
+<script src="./script/cart.js"></script>
+</html>

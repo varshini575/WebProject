@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.navbarContrainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #172738;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(35, 163, 214);
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items a,
+.menu-items span {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu-items a:hover,
+.menu-items span:hover {
+    color: rgb(35, 163, 214);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    max-height: 150px;
+    background-color: aliceblue;
+    color: #172738;
+    top:15px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #172738;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.searchBox input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    width: 280px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.nav-right a {
+    font-size: 20px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-right a:hover {
+    color: rgb(35, 163, 214);
+}
+/* 1st Container CSS */
+.firstContainer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(71, 190, 237);
+    color: aliceblue;
+}
+
+.firstContainer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.firstContainer p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.firstContainer button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 15px;
+}
+
+/* 2nd Container CSS */
+
+.category {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.category .cat {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px grey;
+    transition: transform 0.1s linear;
+
+}
+/* 3rd Container CSS */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px grey;
+    transition: transform 0.6s linear;
+}
+
+.features aside:hover,
+.category .cat:hover {
+    transform: scale(1.1);
+}
+
+
+/* Product Container */
+#product-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 30px;
+}
+#product-container .product-card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    border-radius: 20px;
+}
+.product-card img{
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+}
+.product-card p{
+    font-size: 20px;
+}
+.product-card button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+.product-card button:first-of-type{
+    background-color:skyblue;
+}
+.product-card button:last-of-type{
+    background-color:sandybrown ;
+}
+.product-card button:hover{
+    transform: scale(1.1);
+}
+.product-card:hover{
+    transform: scale(1.05);
+}
